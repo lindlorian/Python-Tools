@@ -1,7 +1,7 @@
-/../*
-Networking/DesktopNotificationHelper.py
 *test_file*
+*pycache*
 .DS_Store
 .idea
-__pychache__
+Networking/DesktopNotificationHelper.py
+Networking/__pychache__
 
