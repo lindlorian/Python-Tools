@@ -1,0 +1,11 @@
+ADDRESS_OUT_OF_BOUNDS_TEXT = "The provided address range is out of bounds. Please use numbers between 1-254."
+DEFAULT_END_ENDPOINT = 254
+DEFAULT_HOST = ""
+DEFAULT_REFERRER = "http://example.com"
+DEFAULT_SEARCH_DIRECTORY = "/"
+DEFAULT_SCHEMA = "http://"
+DEFAULT_START_ENDPOINT = 1
+DEFAULT_TIMEOUT = 0.5
+DEFAULT_USER_AGENT = "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.8) Gecko/20100722 Firefox/3.6.8 GTB7.1 (.NET CLR 3.5.30729)"
+DISCOVERED_PORTALS_TEXT = "The following web portals were discovered: %s"
+NO_RESULTS_TEXT = "No web portals discovered."
