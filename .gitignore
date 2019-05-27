@@ -4,4 +4,15 @@
 .idea
 Networking/DesktopNotificationHelper.py
 Networking/__pychache__
-
+.DS_Store
+.idea
+/Selenium/Support/.DS_Store
+/Selenium/Support/SystemSupport/.DS_Store
+/Selenium/Support/UrlSupport/.DS_Store
+/Networking/DesktopNotificationHelper.py
+/Networking/__pychache__
+/Selenium/chromedriver.exe
+/Selenium/*.png
+/*
+*test_file*
+*pycache*
