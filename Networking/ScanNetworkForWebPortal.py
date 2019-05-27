@@ -95,8 +95,8 @@ class ScanNetworkForWebPortal:
 if __name__ == "__main__":
     scanner = ScanNetworkForWebPortal()
     report = scanner.send_request_and_check_output(host=Constants.DEFAULT_HOST
-                                                    , directory=Constants.DEFAULT_SEARCH_DIRECTORY
-                                                    , start_endpoint=Constants.DEFAULT_START_ENDPOINT
-                                                    , end_endpoint=Constants.DEFAULT_END_ENDPOINT
-                                                    , timeout=Constants.DEFAULT_TIMEOUT
-                                                    , schema=Constants.DEFAULT_SCHEMA)
+                                                   , directory=Constants.DEFAULT_SEARCH_DIRECTORY
+                                                   , start_endpoint=Constants.DEFAULT_START_ENDPOINT
+                                                   , end_endpoint=Constants.DEFAULT_END_ENDPOINT
+                                                   , timeout=Constants.DEFAULT_TIMEOUT
+                                                   , schema=Constants.DEFAULT_SCHEMA)
