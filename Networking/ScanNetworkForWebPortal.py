@@ -61,6 +61,8 @@ class ScanNetworkForWebPortal:
 
         if len(discovered) != 0:
 
+            # A portal was discovered. Prepare the results in readable form
+
             results = Constants.DISCOVERED_PORTALS_TEXT % discovered
 
         else:
@@ -76,6 +78,8 @@ class ScanNetworkForWebPortal:
         address_list = []
 
         # Ensure the start ip and end ip are within the valid range
+        # Scannable ranges are between 0 and 254
+        # 255 is the broadcast address. Don't scan that.
 
         if not (start >= 0 or end >= 254):
 
@@ -87,13 +91,15 @@ class ScanNetworkForWebPortal:
 
         for end_point in range(start, end):
 
+            # e.g. Start at 192.168.0.1 and end at 192.168.0.254
+
             address_list.append(host + "." + str(end_point))
 
         return address_list
 
 
 if __name__ == "__main__":
-    scanner = ScanNetworkForWebPortal()
+    scanner = ScanNetworkForWebPortal()  # Instantiate the scanner class
     report = scanner.send_request_and_check_output(host=Constants.DEFAULT_HOST
                                                    , directory=Constants.DEFAULT_SEARCH_DIRECTORY
                                                    , start_endpoint=Constants.DEFAULT_START_ENDPOINT
